@@ -10,7 +10,17 @@ storage/logs/*
 .rr.yml
 rr
 vendor
-
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
 # 2. Ignore common files/directories we don't need
 fly.toml
 .vscode
