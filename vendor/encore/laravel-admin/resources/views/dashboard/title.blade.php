@@ -26,7 +26,7 @@
 </style>
 
 <div class="title">
-    Ministère des finances
+    Cabinet Madudu
 </div>
 <div class="links">
     {{-- <a href="#" target="_blank">Info</a>

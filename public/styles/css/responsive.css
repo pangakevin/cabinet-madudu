@@ -145,6 +145,10 @@
     text-transform: capitalize;
     font-size: 14px;
   }
+  .img-fluid{
+    height: 450px !important;
+    width: 100%;
+  }
   .section-header .section-title {
     font-size: 22px;
   }
@@ -260,6 +264,10 @@
   .section-header .section-title {
     font-size: 20px;
     line-height: 30px;
+  }
+  .img-fluid{
+    height: 450px !important;
+    width: 100%;
   }
   .contents .head-title {
     font-size: 16px !important;

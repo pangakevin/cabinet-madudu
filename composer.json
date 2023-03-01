@@ -12,7 +12,7 @@
         "encore/laravel-admin": "^1.8",
         "fideloper/proxy": "^4.4",
         "laravel-admin-ext/ckeditor": "^1.0",
-        "laravel/framework": "^6.20.26",
+        "laravel/framework": "^8.20.26",
         "laravel/tinker": "^2.5",
         "laravelcollective/html": "^6.2",
         "nesbot/carbon": "^2.51"

@@ -15,7 +15,7 @@ Route::group([
     
     $router->resource('categories', CategorieController::class);
 
-    $router->resource('annonces', AnnonceController::class);
+    $router->resource('articles', AnnonceController::class);
 
     $router->resource('documents', DocumentController::class);
 

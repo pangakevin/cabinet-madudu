@@ -14,5 +14,5 @@
 
     </div>
     <!-- Default to the left -->
-    <strong>copyright © | Powered by : <a href="/" target="_blank">Ministère des finances</a></strong>
+    <strong>copyright © | Powered by : <a href="/" target="_blank">Cabinet Madudu 2023</a></strong>
 </footer>

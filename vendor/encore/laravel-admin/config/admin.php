@@ -11,7 +11,7 @@ return [
     | login page.
     |
     */
-    'name' => 'Ministère des finances',
+    'name' => 'Cabinet Madudu',
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     | `img` tag, eg '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo' => '<b>MinFin</b> admin',
+    'logo' => '<b>CMS</b> admin',
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return [
     | '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo-mini' => '<b>MF</b>',
+    'logo-mini' => '<b>CMS</b>',
 
     /*
     |--------------------------------------------------------------------------

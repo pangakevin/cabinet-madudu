@@ -86,7 +86,7 @@ Route::get('documents', function () { return view('documents.index'); });
 
 // Route::get('programme', function () { return view('programmes.index'); });
 
-Route::resource('actualites', 'AnnonceController');
+Route::resource('articles', 'AnnonceController');
 
 Route::resource('medias', 'MediaController');
 

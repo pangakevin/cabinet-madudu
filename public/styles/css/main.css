@@ -140,6 +140,10 @@ a:not([href]):not([tabindex]):hover {
     width: 100%;
 }
 
+.section-services{
+    
+    padding: 130px 0;
+}
 
 /* ==========================================================================
    2.2 Buttons
@@ -283,7 +287,8 @@ button:focus {
 }
 
 .twitter a:hover {
-    background: #1DA1F2;
+/*    background: #1DA1F2;*/
+    background: red;
 }
 
 .google-plus a {
@@ -708,6 +713,10 @@ button:focus {
     max-width: 100%;
 }
 
+.section-service{
+    background-color: #f9f9f9;
+}
+
 
 /* ==========================================================================
  Hero Production version
@@ -904,6 +913,7 @@ button:focus {
 #about {
     position: relative;
     background: #f9f9f9;
+    padding-bottom: 30px;
 }
 
 #about .box-item {
@@ -975,6 +985,26 @@ button:focus {
     transform: translateY(-50%);
 }
 
+.about-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section .shape {
+    right: -50px;
+    top: 160px;
+}
+
+.about-section .about-content p {
+    /*padding: 0 15px;*/
+    text-align: justify;
+    margin-top: -30px;
+}
+
+.mb-55 {
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
 
 /* ==========================================================================
    Clients 
@@ -1833,6 +1863,15 @@ button:focus {
    Blog 
    ========================================================================== */
 
+.two-line{
+
+    display:inline-block;
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
 #blog .blog-item-wrapper {
     background: #fff;
     border-radius: 4px;
@@ -1859,10 +1898,11 @@ button:focus {
 #blog .blog-item-img img {
     width: 100%;
     border-radius: 4px;
+    height: 280px;
 }
 
 #blog .blog-item-text {
-    padding: 20px 30px;
+    padding: 20px 20px;
 }
 
 #blog .blog-item-text .date {

@@ -4,11 +4,12 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
-    <title>Cabinet-Madudu</title>
+    <title>Law-Firm-Madudu</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles/css/bootstrap.min.css">
@@ -74,38 +75,38 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img src="styles/img/slider/bg-1.jpg" alt="">
+                        <img src="styles/img/slider/bg-1.jpg" alt="" class="img-fluid">
                         <div class="carousel-caption text-left">
-                            <h2 class="wow fadeInRight" data-wow-delay="0.2s">Nos efforts</h2>
-                            <h3 class="wow fadeInRight" data-wow-delay="0.4s">
-                                Depuis 2006, contributeur au Doing Business Report
-                            </h3>
-                            <!-- <h4 class="wow fadeInRight" data-wow-delay="0.6s">
-                                    Retenu en date du 03 mai 2010 dans la banque des données de l’expertise extérieure devant être associée aux panels de recrutement du PNUD
-                                </h4> -->
-                            <!-- <a href="#" class="btn btn-lg btn-common btn-effect wow fadeInRight" data-wow-delay="0.9s">Download</a>
-                            <a href="#" class="btn btn-lg btn-border wow fadeInRight" data-wow-delay="1.2s">Get Started!</a> -->
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="styles/img/slider/bg-3.jpg" alt="">
-                        <div class="carousel-caption text-center">
+                            
                             <h2 class="wow fadeInDown" data-wow-delay="0.3s">Références</h2>
                             <!-- <h2 class="wow bounceIn" data-wow-delay="0.6s">R</h2> -->
                             <h3 class="wow fadeInUp" data-wow-delay="0.9s">
                                 Retenu en date du 03 mai 2010 dans la banque des données de l’expertise extérieure devant être associée aux panels de recrutement du PNUD
 
                             </h3>
-                            <!-- <a href="#" class="btn btn-lg btn-common btn-effect wow fadeInUp" data-wow-delay="1.2s">View Works</a> -->
+                            
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="styles/img/slider/bg-2.jpg" alt="">
-                        <div class="carousel-caption text-center">
+                        <img src="styles/img/slider/bg-3.jpg" alt="" class="img-fluid">
+                        <div class="carousel-caption text-left">
+                            <h2 class="wow fadeInRight" data-wow-delay="0.2s">
+                                    Nos centres d’intérêts
+                            </h2>
+                            
+                            <h3 class="wow fadeInRight" data-wow-delay="0.4s">
+                                Depuis 2006, contributeur au Doing Business Report
+                            </h3> 
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="styles/img/slider/bg-2.jpg" alt="" class="img-fluid">
+                        <div class="carousel-caption text-left">
                             <h2 class="wow fadeInDown" data-wow-delay="0.3s">Philosophie du Cabinet </h2>
-                            <h3 class="wow fadeInRight" data-wow-delay="0.6s">Vérité, Justice et Intégrité </h3>
-                            <!-- <h4 class="wow fadeInUp" data-wow-delay="0.6s">App, Business, SaaS and Landing Pages</h4> -->
-                            <!-- <a href="#" class="btn btn-lg btn-border wow fadeInUp" data-wow-delay="0.9s">Purchase</a> -->
+                            <h3 class="wow fadeInRight" data-wow-delay="0.6s">
+                                Vérité, Justice et Intégrité 
+                            </h3>
                         </div>
                     </div>
                 </div>
@@ -240,7 +241,7 @@
     <!-- Features Section Start -->
 
 
-    <section id="services" class="section">
+    <section id="services" class="section section-service">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Nos Services</h2>
@@ -256,7 +257,6 @@
                             <i class="lni-pencil"></i>
                         </div>
                         <h4> Le droit des affaires </h4>
-                        <!-- <p>constitution de sociétés, droit commercial général, droit des sociétés, droit OHADA, etc</p> -->
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-xs-12">
@@ -307,7 +307,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-2 col-md-4 col-xs-8 ml-auto blog-item">
-                    <a href="#" class="btn btn-lg btn-common btn-effect wow fadeInUp " data-wow-delay="1.2s">Voir plus...</a>
+                    <a href="/services" class="btn btn-lg btn-common btn-effect wow fadeInUp " data-wow-delay="1.2s">Voir plus...</a>
 
                 </div>
             </div>
@@ -381,7 +381,7 @@
     <!-- Counter Section End -->
 
     <!-- Testimonial Section Start -->
-    <section class="testimonial section">
+    <section class="testimonial section section-service">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -517,18 +517,40 @@
                         <div class="team-details">
                             <div class="team-inner">
                                 <h4 class="team-title">Maître Christie MADUDU SULUBIKA</h4>
-                                <p>Avocate au Barreau de Kinshasa/Gombe, ONA 1307</p>
-                                <ul class="social-list">
+                                
+                                {{-- <ul class="social-list">
                                     <li class="facebook"><a href="#"><i class="lni-facebook-filled"></i></a></li>
                                     <li class="twitter"><a href="#"><i class="lni-twitter-filled"></i></a></li>
                                     <li class="google-plus"><a href="#"><i class="lni-google-plus"></i></a></li>
                                     <li class="linkedin"><a href="#"><i class="lni-linkedin-fill"></i></a></li>
-                                </ul>
+                                </ul> --}}
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-xs-12">
+                <div class="col-lg-8 col-md-10 col-xs-14" style="text-align: justify-all;">
+                    <div class="">
+                        <p>Avocate au Barreau de Kinshasa/Gombe, ONA 1307</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p> <br>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+
+
+                {{-- <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="single-team">
                         <img src="styles/img/team/team1.png" alt="">
                         <div class="team-details">
@@ -578,7 +600,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -659,7 +681,7 @@
     <!-- Subcribe Section End -->
 
     <!-- Blog Section -->
-    <section id="blog" class="section">
+    <section id="blog" class="section section-service">
         <!-- Container Starts -->
         <div class="container">
             <div class="section-header">
@@ -668,17 +690,26 @@
                 <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos debitis.</p>
             </div>
             <div class="row">
+                @foreach ($annonces as $annonce)
                 <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
                     <!-- Blog Item Starts -->
                     <div class="blog-item-wrapper">
                         <div class="blog-item-img">
-                            <a href="single-post.html">
-                                <img src="styles/img/blog/img1.jpg" alt="">
+                            <a href="{{ route('annonces.show',$annonce->slug) }}">
+                                <img src="uploads/{{ $annonce->image }}" type="button" class=" img-fluid" alt="" />
                             </a>
                         </div>
                         <div class="blog-item-text">
-                            <div class="date"><i class="lni-calendar"></i>10 April, 2018</div>
-                            <h3><a href="single-post.html">10 Droit de la femme...</a></h3>
+                            <div class="date"><i class="lni-calendar"></i>
+                                {{$annonce->created_at->formatLocalized("%e %b %Y")}} · {{ $annonce->categorie->nom }}
+                            </div>
+                            <h3 class="black text-sm-left text-nowrap text-truncate">
+                               
+                                    <a href="{{ route('annonces.show',$annonce->slug) }}">
+                                        {{ $annonce->titre }} je suis dans la viekkke de teste de tout djk skshifiuis ssuhfoishfvzzgvs kjhfkjhkndsn 
+                                    </a>
+                                
+                            </h3>
                             <!-- <div class="meta-tags">
                                 <span><a href="#"><i class="lni-eye"></i> 4.5k Views</a></span>
                                 <span><a href="#"><i class="lni-bubble"></i> 07</a></span>
@@ -688,71 +719,14 @@
                     </div>
                     <!-- Blog Item Wrapper Ends-->
                 </div>
-
-                <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
-                    <!-- Blog Item Starts -->
-                    <div class="blog-item-wrapper">
-                        <div class="blog-item-img">
-                            <a href="single-post.html">
-                                <img src="styles/img/blog/img2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="blog-item-text">
-                            <div class="date"><i class="lni-calendar"></i>10 April, 2018</div>
-                            <h3><a href="single-post.html">10 Droit de l'enfant...</a></h3>
-                            <!-- <div class="meta-tags">
-                                <span><a href="#"><i class="lni-eye"></i> 4.5k Views</a></span>
-                                <span><a href="#"><i class="lni-bubble"></i> 07</a></span>
-                                <span><a href="#"><i class="lni-reply"></i> 332</a></span>
-                            </div> -->
-                        </div>
-                    </div>
-                    <!-- Blog Item Wrapper Ends-->
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
-                    <!-- Blog Item Starts -->
-                    <div class="blog-item-wrapper">
-                        <div class="blog-item-img">
-                            <a href="single-post.html">
-                                <img src="styles/img/blog/img3.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="blog-item-text">
-                            <div class="date"><i class="lni-calendar"></i>10 April, 2018</div>
-                            <h3><a href="single-post.html">7 10 Droit des affaires...</a></h3>
-                            <!-- <div class="meta-tags">
-                                <span><a href="#"><i class="lni-eye"></i> 4.5k Views</a></span>
-                                <span><a href="#"><i class="lni-bubble"></i> 07</a></span>
-                                <span><a href="#"><i class="lni-reply"></i> 332</a></span>
-                            </div> -->
-                        </div>
-                    </div>
-                    <!-- Blog Item Wrapper Ends-->
-                </div>
+                @endforeach
             </div>
 
             <div class="row">
                 <div class="col-lg-2 col-md-4 col-xs-8 ml-auto blog-item">
-                    <a href="#" class="btn btn-lg btn-common btn-effect wow fadeInUp " data-wow-delay="1.2s">Lire plus...</a>
+                    <a href="/articles" class="btn btn-lg btn-common btn-effect wow fadeInUp " data-wow-delay="1.2s">Lire plus...</a>
                     <!-- Blog Item Starts -->
-                    <!-- <div class="blog-item-wrapper">
-                        <div class="blog-item-img">
-                            <a href="single-post.html">
-                                <img src="styles/img/blog/img1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="blog-item-text">
-                            <div class="date"><i class="lni-calendar"></i>10 April, 2018</div>
-                            <h3><a href="single-post.html">10 Tips to Design a High-converting Landing Page</a></h3>
-                            <div class="meta-tags">
-                                <span><a href="#"><i class="lni-eye"></i> 4.5k Views</a></span>
-                                <span><a href="#"><i class="lni-bubble"></i> 07</a></span>
-                                <span><a href="#"><i class="lni-reply"></i> 332</a></span>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- Blog Item Wrapper Ends-->
+                    
                 </div>
 
             </div>
@@ -995,7 +969,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="site-info float-left">
-                            <p class="copyright-p">copyright 2023 : <a href="#" rel="nofollow">Cabinet Madudu</a></p>
+                            <p class="copyright-p">copyright © | Powered by :<a href="#" rel="nofollow">Cabinet Madudu 2023</a></p>
                         </div>
                         <!-- <div class="float-right">
                             <ul class="nav nav-inline">

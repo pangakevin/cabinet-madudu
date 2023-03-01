@@ -17,7 +17,7 @@ body {
 }
 
 .bg-primaryColor {
-    background-color: #0081ec !important;
+    background-color: #133155 !important;
 }
 
 .bg-primaryColorRed {
@@ -481,7 +481,7 @@ button:focus,
 a:hover {
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
-    color: #0081ec;
+    color: #133155;
 }
 
 a:focus,
@@ -574,7 +574,7 @@ p {
 }
 
 .theme-bg {
-    background-color: #0081ec;
+    background-color: #133155;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -586,7 +586,7 @@ p {
 .read-more {
     font-size: 18px;
     font-weight: 500;
-    color: #0081ec;
+    color: #133155;
     font-family: "Raleway", sans-serif;
 }
 
@@ -605,7 +605,7 @@ p {
 }
 
 .success {
-    color: #0081ec;
+    color: #133155;
 }
 
 .shape {
@@ -637,7 +637,7 @@ p {
 }
 
 .tns-nav button.tns-nav-active {
-    background: #0081ec;
+    background: #133155;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
@@ -663,7 +663,7 @@ p {
     z-index: 5;
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
-    background-color: #0081ec;
+    background-color: #133155;
 }
 
 .theme-btn:hover {
@@ -738,7 +738,7 @@ p {
     font-size: 25px;
     font-weight: 600;
     display: block;
-    color: #0081ec;
+    color: #133155;
     margin-bottom: 15px;
 }
 
@@ -832,7 +832,7 @@ p {
     height: 100%;
     border-style: solid;
     /* Spinner Color */
-    border-color: #0081ec #0081ec #8c96a7;
+    border-color: #133155 #133155 #8c96a7;
     border-radius: 50%;
     border-width: 6px;
 }
@@ -1228,6 +1228,7 @@ p {
 
 .mb-55 {
     margin-bottom: 30px;
+    margin-top: 50px;
 }
 
 .mb-60 {
@@ -1795,7 +1796,7 @@ p {
 
 .header-top ul li a i:hover {
     background: #fff;
-    color: #0081ec;
+    color: #133155;
 }
 
 .header-top .header-top-left ul li:first-child {
@@ -1974,7 +1975,7 @@ p {
 
 .navbar-nav .nav-item a.active,
 .navbar-nav .nav-item a:hover {
-    color: #0081ec;
+    color: #133155;
     /* background-color: #112b49e0; */
     /*border-bottom: 2px solid #112b49;*/
     /*padding: 2px;*/
@@ -2048,7 +2049,7 @@ p {
 .navbar-nav .nav-item .sub-menu li a.active,
 .navbar-nav .nav-item .sub-menu li a:hover {
     padding-left: 25px;
-    color: #0081ec;
+    color: #133155;
 }
 
 .navbar-nav .sub-nav-toggler {
@@ -2121,13 +2122,13 @@ p {
         linear,
         left top,
         right top,
-        from(#0081ec),
+        from(#133155),
         color-stop(70.76%, rgba(0, 173, 181, 0.11)),
         to(rgba(255, 255, 255, 0))
     );
     background-image: linear-gradient(
         to right,
-        #0081ec 0%,
+        #133155 0%,
         rgba(0, 173, 181, 0.11) 70.76%,
         rgba(255, 255, 255, 0) 100%
     );
@@ -2198,7 +2199,7 @@ p {
 
 .slider-section .single-slider .slider-content .theme-btn {
     background: #fff;
-    color: #0081ec;
+    color: #133155;
 }
 
 .slider-section .single-slider .slider-content .theme-btn:hover {
@@ -2411,7 +2412,7 @@ p {
     left: 0;
     z-index: -1;
     border-radius: 20px;
-    background-color: #0081ec;
+    background-color: #133155;
     /* background: url("../img/service/service-1.png"); */
     opacity: 0;
     visibility: hidden;
@@ -2554,7 +2555,7 @@ p {
     width: 77px;
     height: 77px;
     line-height: 77px;
-    background: #0081ec;
+    background: #133155;
     color: #fff;
     position: relative;
     text-align: center;
@@ -2700,7 +2701,7 @@ p {
 }
 
 .subscribe-section .subscribe-wrapper .subscribe-from input:focus {
-    border-color: #0081ec;
+    border-color: #133155;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2730,7 +2731,7 @@ p {
 }
 
 .subscribe-section .subscribe-wrapper .support h2 span {
-    color: #0081ec;
+    color: #133155;
     display: block;
 }
 
@@ -2754,12 +2755,12 @@ p {
 .subscribe-section .subscribe-wrapper .subscribe-links ul li a span {
     font-size: 26px;
     font-weight: 600;
-    color: #0081ec;
+    color: #133155;
     margin-right: 40px;
 }
 
 .subscribe-section .subscribe-wrapper .subscribe-links ul li a:hover i {
-    background: #0081ec;
+    background: #133155;
 }
 
 .subscribe-section .subscribe-wrapper .subscribe-links ul li:last-child a {
@@ -2767,7 +2768,7 @@ p {
 }
 
 .subscribe-section .subscribe-wrapper .subscribe-links ul li:first-child a i {
-    background: #0081ec;
+    background: #133155;
 }
 
 @media (max-width: 767px) {
@@ -2813,7 +2814,7 @@ p {
 }
 
 .blog-section .single-blog .blog-content h4:hover {
-    color: #0081ec;
+    color: #133155;
 }
 
 .blog-section .single-blog .blog-content p {
@@ -2890,7 +2891,7 @@ p {
     ul
     li
     a:hover {
-    background: #0081ec;
+    background: #133155;
 }
 
 .footer
@@ -2914,7 +2915,7 @@ p {
 }
 
 .footer .copyright-area a p:hover {
-    color: #0081ec !important;
+    color: #133155 !important;
 }
 
 .footer .container {
