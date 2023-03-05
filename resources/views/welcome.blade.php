@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <link rel="shortcut icon" type="image/x-icon" href="styles/img/favicon.png" />
     <meta name="author" content="Grayrids">
     <title>Law-Firm-Madudu</title>
 

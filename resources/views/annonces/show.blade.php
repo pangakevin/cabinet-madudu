@@ -15,6 +15,7 @@
     <meta property="og:description" content="{{ $annonce->categorie->nom }}" />
     <meta property="og:image" content="{{ asset('uploads/' . $annonce->image) }}" />
     <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('styles/img/favicon.png')}}" />
     <title>Law-Firm-Madudu >{{ $annonce->categorie->nom }} </title>
 
     <!-- Bootstrap CSS -->
@@ -28,7 +29,6 @@
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
     
     <link rel="stylesheet" href="{{asset('styles/css/bootstrap.min.css')}}">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo_white.png" />
     <link rel="stylesheet" href="{{ asset('styles/css/line-icons.css')}}">
     <link rel="stylesheet" href="{{asset ('styles/css/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{asset('styles/css/owl.theme.css')}}">
