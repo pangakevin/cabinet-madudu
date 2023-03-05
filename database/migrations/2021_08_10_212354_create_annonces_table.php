@@ -15,9 +15,9 @@ class CreateAnnoncesTable extends Migration
     {
         Schema::create('annonces', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('titre');
+            $table->text('titre');
             $table->string('slug')->unique();
-            $table->enum('versions',['Française','Anglaise']);
+            $table->enum('type',['Articles','Actualités']);
             $table->text('description');
             $table->unsignedBigInteger('categorie_id')->unsigned();
             $table->foreign('categorie_id')->references('id')->on('categories')->onDelete('cascade');

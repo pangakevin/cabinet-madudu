@@ -67,7 +67,8 @@ class ServiceController extends AdminController
 
         $form->text('nom', __('Nom'));
         $form->text('url', __('Url'));
-        $form->text('image', __('Image'))->default('images/fondmin.jpg');
+        $form->icon('image', __('Image'));
+        // $form->text('image', __('Image'))->default('images/fondmin.jpg');
 
         return $form;
     }

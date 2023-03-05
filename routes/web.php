@@ -86,7 +86,9 @@ Route::get('documents', function () { return view('documents.index'); });
 
 // Route::get('programme', function () { return view('programmes.index'); });
 
-Route::resource('articles', 'AnnonceController');
+Route::resource('Articles', 'AnnonceController');
+
+Route::resource('Actualités', 'AnnonceAnglController');
 
 Route::resource('medias', 'MediaController');
 
@@ -95,6 +97,8 @@ Route::resource('show', 'ShowController');
 Route::resource('annonces', 'AnnonceController');
 
 Route::get('article-par-categorie/{id}',[AnnonceController::class,'viewcatbyart'])->name('filtrcat');
+
+Route::get('actualités-par-categorie/{id}',[AnnonceController::class,'viewcatbyact'])->name('actufiltrcat');
 
 Route::get('media-categorie/{categorie}','EvenementController@show')->name('media.categoryMedia');
 

@@ -30,9 +30,9 @@ class ShowController extends Controller
 
         $connexes = Annonce::with('categorie')->latest()->simplePaginate(4);
 
-        $artianglas = Annonce::with('categorie')->where('versions',"=","Anglaise")->latest()->Paginate(6);
+        $artianglas = Annonce::with('categorie')->where('type',"=","Articles")->latest()->Paginate(6);
 
-        $artifrans = Annonce::with('categorie')->where('versions',"=","Française")->latest()->Paginate(6);
+        $artifrans = Annonce::with('categorie')->where('type',"=","Actualités")->latest()->Paginate(6);
 
         $categories = Categorie::latest()->get();
 

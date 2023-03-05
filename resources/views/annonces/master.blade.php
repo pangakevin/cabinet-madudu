@@ -32,7 +32,7 @@
 	{{-- script --}}
 
 
-	<title>MinFin</title>
+	<title>Law Firm MADUDU</title>
 	<link rel="stylesheet" href="">
 </head>
 <body>

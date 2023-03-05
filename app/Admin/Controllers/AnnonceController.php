@@ -29,7 +29,7 @@ class AnnonceController extends AdminController
 
         $grid->column('id', __('Id'))->sortable();
         $grid->column('titre', __('Titre'))->filter('like');
-        $grid->column('versions', __('Version'))->filter('like');
+        $grid->column('type', __('Type'))->filter('like');
         $grid->column('description', __('Description'))->filter('like');
 
 
@@ -60,7 +60,7 @@ class AnnonceController extends AdminController
 
         $show->field('id', __('Id'));
         $show->field('titre', __('Titre'));
-        $show->field('versions', __('Version'));
+        $show->field('type', __('Type'));
         $show->field('description', __('Description'));
         $show->field('categorie_id', __('Categorie id'));
         $show->field('image', __('Image'))->image();
@@ -93,7 +93,7 @@ class AnnonceController extends AdminController
         // });
         // $form->textarea('description', __('Description'));
         
-        $form->select('versions', __('Versions'))->options([1=>'Française',2=>'Anglaise']);
+        $form->select('type', __('types'))->options([1=>'Articles',2=>'Actualités']);
         $form->ckeditor('description', __('Description'));
 
         //$form->number('categorie_id', __('Categorie id'));

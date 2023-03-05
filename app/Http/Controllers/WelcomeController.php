@@ -28,17 +28,21 @@ class WelcomeController extends Controller
 
         // $annonces = Annonce::latest()->Paginate(3);
 
-        $annonces = Annonce::with('categorie')->latest()->offset(0)->limit(3)->get();
+        // $annonces = Annonce::with('categorie')->latest()->offset(0)->limit(3)->get();
+
+        $actualites = Annonce::with('categorie')->where('type',"=","Actualités")->latest()->offset(0)->limit(3)->get();
+
+        $artianglas = Annonce::with('categorie')->where('type',"=","Articles")->latest()->offset(0)->limit(3)->get();
 
         $services = Service::latest()->limit(6)->get();
 
         $counts = DB::table('annonces')->count();
 
-        $recent = "Bonjour";
+        // $recent = "Bonjour";
 
 
         
-        return view('welcome', compact(['annonces','recent','services']))
+        return view('welcome', compact(['artianglas','actualites','services']))
                 ->with('i',(
                     request()
                     ->input('page',1) -1) *5

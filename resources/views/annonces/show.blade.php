@@ -19,8 +19,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-5.0.5-alpha.min.css') }}" />
+    <link rel="stylesheet" href="styles/css/bootstrap.min.css">
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> --}}
     <link rel="stylesheet" href="{{ asset('assets/css/LineIcons.2.0.css') }}" />
+    <link rel="stylesheet" href="styles/css/line-icons.css">
     <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/tiny-slider.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
@@ -63,26 +65,33 @@
           </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="/#features">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="/#services">Nos services</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#portfolios">Works</a>
+                        </li> -->
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#features">À propos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/services">Nos services</a>
+                            <a class="nav-link page-scroll" href="/#team">Notre équipe</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/#team">Notre équipe</a>
+                            <a class="nav-link page-scroll" href="/#articles">Articles</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="">Articles</a>
+                            <a class="nav-link page-scroll" href="/#actulites">Actualités</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="/#contact">Contact</a>
+                            <a class="nav-link page-scroll" href="/#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -101,7 +110,10 @@
                     <div class="about-content text-center mb-55">
                         <div class="section-title mb-30" style="text-align: initial;">
                             <span class="wow fadeInDown" data-wow-delay=".2s">
-                                <a style="color:#133155;" href="/articles">Article</a> / <a href="">{{ $annonce->categorie->nom }}</a> 
+                                <a style="color:#133155;" href="/{{ $annonce->categorie->type }}">
+                                    {{ $annonce->categorie->type }}
+                                </a>
+                                 / {{ $annonce->categorie->nom }}
                             </span>
                             <h2 class="mb-15 wow fadeInUp" data-wow-delay=".4s">
                                 {{ $annonce->titre }}
@@ -136,20 +148,21 @@
                 <div class="footer-social-links">
                     <ul class="d-flex justify-content-center justify-content align-items-center mt-4">
                         <li class="mr-4">
-                            <a id="facebook" href="#" target="_blank" class="fz-3"><i class="lni lni-facebook"></i></a>
+                            <a id="facebook" href="#" target="_blank" class="fz-3 facebook"><i class="lni-facebook-filled"></i></a>
                         </li>
                         <li class="mr-4">
-                            <a id="twitter" href="#" target="_blank" class="fz-3"><i class="lni lni-twitter"></i></a>
+                            <a id="twitter" href="#" target="_blank" class="fz-3 twitter"><i class="lni-twitter-filled"></i></a>
                         </li>
                         <li class="mr-4">
-                            <a id="whatsapp" href="#" target="_blank" class="fz-3"><i class="lni lni-whatsapp"></i></a>
+                            <a id="whatsapp" href="#" target="_blank" class="fz-3 whatsapp"><i class="lni-whatsapp"></i></a>
                         </li>
                         <li class="mr-4">
-                            <a id="linkedin" href="#" target="_blank" class="fz-3"><i class="lni lni-linkedin"></i></a>
+                            <a id="linkedin" href="#" target="_blank" class="fz-3"><i class="lni-linkedin-fill"></i></a>
                         </li>
                         <li class="mr-4">
-                            <a id="gmail" href="#" target="_blank" class="fz-3"><i class="lni lni-envelope"></i></a>
+                            <a id="gmail" href="#" target="_blank" class="fz-3 gmail"><i class="lni-envelope"></i></a>
                         </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -216,16 +229,13 @@
                     <div class="blog-item-wrapper">
                         <div class="blog-item-img">
                             <a href="{{ route('annonces.show', $recent->slug) }}">
-                                            <img src="{{ asset('uploads/'.$recent->image) }}" type="button" class=" img-fluid" style="width: 100%;
-    height: 280px;" 
-                                                alt="" />
-                                        </a>
+                                <img src="{{ asset('uploads/'.$recent->image) }}" type="button" class=" img-fluid" style="width: 100%;
+    height: 280px;" alt="" />
+                            </a>
                         </div>
                         <div class="blog-item-text">
                             <div class="date"><i class="lni-calendar"></i>
-                                {{ $recent->created_at->formatLocalized('%e %b %Y') }}
-                                                |
-                                {{ $recent->categorie->nom }}
+                                {{ $recent->created_at->formatLocalized('%e %b %Y') }} | {{ $recent->categorie->type }} > {{ $recent->categorie->nom }}
                             </div>
                             <h3 class="black text-sm-left text-nowrap text-truncate">
                                 <a href="{{ route('annonces.show', $recent->slug) }}">
@@ -247,7 +257,7 @@
 
             <div class="row">
                 <div class="col-lg-2 col-md-4 col-xs-8 ml-auto blog-item">
-                    <a href="/articles" class="btn btn-lg btn-common btn-effect wow fadeInUp " data-wow-delay="1.2s">Lire plus...</a>
+                    <a href="/{{ $annonce->categorie->type }}" class="btn btn-lg btn-common btn-effect wow fadeInUp " data-wow-delay="1.2s">Lire plus...</a>
                     <!-- Blog Item Starts -->
                     
                 </div>
@@ -308,7 +318,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-                        <h3 class="color-footer">Cabinet Madudu</h3>
+                        <h3 class="color-footer">Law Firm Madudu</h3>
                         <div class="textwidget">
                             <p class="color-footer"> If you think you have the passion, attitude and capability to join us...</p>
                         </div>

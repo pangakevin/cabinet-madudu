@@ -34,14 +34,14 @@ class AnnonceController extends Controller
 
         $annonces = Annonce::with('categorie')->latest()->Paginate(10);
 
-        $artianglas = Annonce::with('categorie')->where('versions',"=","Anglaise")->latest()->Paginate(10);
+        $artianglas = Annonce::with('categorie')->where('type',"=","Actualités")->latest()->Paginate(10);
 
-        $artifrans = Annonce::with('categorie')->where('versions',"=","Française")->latest()->Paginate(10);
+        $artifrans = Annonce::with('categorie')->where('type',"=","Articles")->latest()->Paginate(10);
 
         // $categories = Categorie::latest()->get();
         // $categories = Categorie::where('nom',"=",'kjss')->get();
 
-        $categories = Categorie::select("*")
+        $categories = Categorie::select("*")->where('type',"=","Articles")
                         ->orderBy("nom")
                         ->get();
 
@@ -63,12 +63,38 @@ class AnnonceController extends Controller
 
         $filcats =  Annonce::with('categorie')->where('categorie_id',"=",$request->id)->get();
 
-        $categories = Categorie::latest()->get();
+        // $categories = Categorie::latest()->get();
+
+        $categories = Categorie::latest()->where('type',"=","Articles")->orderBy("nom")->get();
+
+
         // dd($categories);
 
 
 
         return view('annonces.annoncecat', compact(['filcats','categories']))
+                ->with('i',(
+                    request()
+                    ->input('page',1) -1) *5
+                );
+
+    }
+
+    public function viewcatbyact(Request $request){
+
+        // $category = Categorie::where('id','=',$request->id)->get();
+
+        // $nom = DB::table('categories')->where('name',$request->nom)->pluck('id');
+
+        $filcats =  Annonce::with('categorie')->where('categorie_id',"=",$request->id)->get();
+
+        $actucategories = Categorie::latest()->where('type',"=","Actualités")->orderBy("nom")->get();
+        
+        // dd($categories);
+
+
+
+        return view('annonces.actualitescat', compact(['filcats','actucategories']))
                 ->with('i',(
                     request()
                     ->input('page',1) -1) *5

@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 class Annonce extends Model
 {
     protected $table = 'annonces';
-    protected $fillable = ['titre','slug','versions','description','image','categorie_id'];
+    protected $fillable = ['titre','slug','type','description','image','categorie_id'];
     protected static function boot()
     {
         parent::boot();

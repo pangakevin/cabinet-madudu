@@ -26,11 +26,11 @@ class AnnonceAnglController extends Controller
     {
         $annonces = Annonce::with('categorie')->latest()->Paginate(10);
 
-        $artianglas = Annonce::with('categorie')->where('versions',"=","Anglaise")->latest()->Paginate(10);
+        $articles = Annonce::with('categorie')->where('type',"=","Actualités")->latest()->Paginate(10);
 
-        $categories = Categorie::latest()->get();
+        $articlescats = Categorie::latest()->where('type',"=","Actualités")->orderBy("nom")->get();
 
-        return view('annonces.annonceangl', compact(['annonces','artianglas','categories']))
+        return view('annonces.annonceangl', compact(['annonces','articles','articlescats']))
                 ->with('i',(
                     request()
                     ->input('page',1) -1) *5
@@ -106,8 +106,10 @@ class AnnonceAnglController extends Controller
     public function show($id)
     {
         // $annonce = Annonce::find($id);
-        $annonce = Annonce::find($id)->where('versions',"=","Française");
-        $categorie = Categorie::find($id);
+        $annonce = Annonce::find($id)->where('type',"=","Articles");
+
+        $categorieeee = Categorie::find($id);
+
         return view('annonces.show',compact(['annonce','categories']));
     }
 
@@ -161,6 +163,27 @@ class AnnonceAnglController extends Controller
         return redirect()
                 ->route('annonces.annonceangl')
                 ->with('success','Annonce a été ajouter');
+    }
+    public function viewcatbyact(Request $request){
+
+        // $category = Categorie::where('id','=',$request->id)->get();
+
+        // $nom = DB::table('categories')->where('name',$request->nom)->pluck('id');
+
+        $filcats =  Annonce::with('categorie')->where('categorie_id',"=",$request->id)->get();
+
+        $actucategories = Categorie::latest()->where('type',"=","Actualités")->get();
+        
+        // dd($categories);
+
+
+
+        return view('annonces.actualitescat', compact(['filcats','actucategories']))
+                ->with('i',(
+                    request()
+                    ->input('page',1) -1) *5
+                );
+
     }
 }
 

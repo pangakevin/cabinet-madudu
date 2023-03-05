@@ -12,6 +12,8 @@
     <title>Law-Firm-Madudu</title>
 
     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/css/line-icons.css">
     <link rel="stylesheet" href="styles/css/owl.carousel.css">
@@ -23,6 +25,7 @@
     <link rel="stylesheet" href="styles/css/menu_sideslide.css">
     <link rel="stylesheet" href="styles/css/main.css">
     <link rel="stylesheet" href="styles/css/responsive.css">
+    {{-- <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script> --}}
 
 </head>
 
@@ -31,7 +34,8 @@
     <header id="slider-area">
         <nav class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="styles/img/favicon2.png" alt=""> Law Firm MADUDU</a>
+                <a class="navbar-brand" href="/">
+                    <img src="styles/img/favicon2.png" alt=""> Law Firm MADUDU</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button>
@@ -55,8 +59,13 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#blog">Articles</a>
+                            <a class="nav-link page-scroll" href="#articles">Articles</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#actulites">Actualités</a>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link page-scroll" href="#contact">Contact</a>
                         </li>
@@ -308,10 +317,17 @@
             <div class="row">
                 <div class="col-lg-2 col-md-4 col-xs-8 ml-auto blog-item">
                     <a href="/services" class="btn btn-lg btn-common btn-effect wow fadeInUp " data-wow-delay="1.2s">Voir plus...</a>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-xs-8 ml-auto blog-item">
+                   
 
                 </div>
             </div>
         </div>
+
     </section>
     <!-- Features Section End -->
 
@@ -381,7 +397,7 @@
     <!-- Counter Section End -->
 
     <!-- Testimonial Section Start -->
-    <section class="testimonial section section-service">
+    <section class="testimonial section chooose-us">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -503,7 +519,7 @@
     <!-- Call To Action Section Start -->
 
     <!-- Team section Start -->
-    <section id="team" class="section chooose-us">
+    <section id="team" class="section section-service">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Notre équipe</h2>
@@ -549,58 +565,6 @@
                     </div>
                 </div>
 
-
-                {{-- <div class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="single-team">
-                        <img src="styles/img/team/team1.png" alt="">
-                        <div class="team-details">
-                            <div class="team-inner">
-                                <h4 class="team-title">Maître Christie MADUDU SULUBIKA</h4>
-                                <p>Avocate au Barreau de Kinshasa/Gombe, ONA 1307</p>
-                                <ul class="social-list">
-                                    <li class="facebook"><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li class="twitter"><a href="#"><i class="lni-twitter-filled"></i></a></li>
-                                    <li class="google-plus"><a href="#"><i class="lni-google-plus"></i></a></li>
-                                    <li class="linkedin"><a href="#"><i class="lni-linkedin-fill"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="single-team">
-                        <img src="styles/img/team/team1.png" alt="">
-                        <div class="team-details">
-                            <div class="team-inner">
-                                <h4 class="team-title">Maître Christie MADUDU SULUBIKA</h4>
-                                <p>Avocate au Barreau de Kinshasa/Gombe, ONA 1307</p>
-                                <ul class="social-list">
-                                    <li class="facebook"><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li class="twitter"><a href="#"><i class="lni-twitter-filled"></i></a></li>
-                                    <li class="google-plus"><a href="#"><i class="lni-google-plus"></i></a></li>
-                                    <li class="linkedin"><a href="#"><i class="lni-linkedin-fill"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="single-team">
-                        <img src="styles/img/team/team1.png" alt="">
-                        <div class="team-details">
-                            <div class="team-inner">
-                                <h4 class="team-title">Maître Christie MADUDU SULUBIKA</h4>
-                                <p>Avocate au Barreau de Kinshasa/Gombe, ONA 1307</p>
-                                <ul class="social-list">
-                                    <li class="facebook"><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li class="twitter"><a href="#"><i class="lni-twitter-filled"></i></a></li>
-                                    <li class="google-plus"><a href="#"><i class="lni-google-plus"></i></a></li>
-                                    <li class="linkedin"><a href="#"><i class="lni-linkedin-fill"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </section>
@@ -681,7 +645,7 @@
     <!-- Subcribe Section End -->
 
     <!-- Blog Section -->
-    <section id="blog" class="section section-service">
+    <section id="articles" class="section chooose-us">
         <!-- Container Starts -->
         <div class="container">
             <div class="section-header">
@@ -689,42 +653,90 @@
 
                 <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos debitis.</p>
             </div>
+            
             <div class="row">
-                @foreach ($annonces as $annonce)
+                @foreach ($artianglas as $artiangla)
                 <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
-                    <!-- Blog Item Starts -->
-                    <div class="blog-item-wrapper">
-                        <div class="blog-item-img">
-                            <a href="{{ route('annonces.show',$annonce->slug) }}">
-                                <img src="uploads/{{ $annonce->image }}" type="button" class=" img-fluid" alt="" />
+                <div class="card-deck">
+                  <div class="card">
+                    <a href="{{ route('annonces.show',$artiangla->slug) }}">
+                                <img class="card-img-top" src="uploads/{{ $artiangla->image }}" alt="Card image cap img-fluid">
                             </a>
-                        </div>
-                        <div class="blog-item-text">
-                            <div class="date"><i class="lni-calendar"></i>
-                                {{$annonce->created_at->formatLocalized("%e %b %Y")}} · {{ $annonce->categorie->nom }}
-                            </div>
-                            <h3 class="black text-sm-left text-nowrap text-truncate">
-                               
-                                    <a href="{{ route('annonces.show',$annonce->slug) }}">
-                                        {{ $annonce->titre }} je suis dans la viekkke de teste de tout djk skshifiuis ssuhfoishfvzzgvs kjhfkjhkndsn 
-                                    </a>
-                                
-                            </h3>
-                            <!-- <div class="meta-tags">
-                                <span><a href="#"><i class="lni-eye"></i> 4.5k Views</a></span>
-                                <span><a href="#"><i class="lni-bubble"></i> 07</a></span>
-                                <span><a href="#"><i class="lni-reply"></i> 332</a></span>
-                            </div> -->
-                        </div>
+                    <div class="card-body">
+                      <h3 class="card-title black text-sm-left text-nowrap text-truncate">
+                        <a href="{{ route('annonces.show',$artiangla->slug) }}">
+                            {{ $artiangla->titre }}
+                        </a>
+                      </h3>
+                      
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <div class="date">
+                                    <i class="lni-calendar"></i>
+                                {{-- {{$artiangla->created_at->formatLocalized("%e %b %Y")}}  --}}
+                                {{ \Carbon\Carbon::parse($artiangla->created_at)->translatedFormat('d F Y') }}| 
+                                {{ $artiangla->categorie->nom }}
+                                </div>
+                            </small>
+                        </p>
                     </div>
-                    <!-- Blog Item Wrapper Ends-->
+                  </div>
+                </div>
                 </div>
                 @endforeach
             </div>
-
             <div class="row">
                 <div class="col-lg-2 col-md-4 col-xs-8 ml-auto blog-item">
-                    <a href="/articles" class="btn btn-lg btn-common btn-effect wow fadeInUp " data-wow-delay="1.2s">Lire plus...</a>
+                    <a href="/Articles" class="btn btn-lg btn-common btn-effect wow fadeInUp " data-wow-delay="1.2s">Lire plus...</a>
+                    <!-- Blog Item Starts --> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="actulites" class="section section-service">
+        <!-- Container Starts -->
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Actualités</h2>
+
+                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos debitis.</p>
+            </div>
+           
+            <div class="row">
+                @foreach ($actualites as $actualite)
+                <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
+                <div class="card-deck">
+                  <div class="card">
+                    <a href="{{ route('annonces.show',$actualite->slug) }}">
+                                <img class="card-img-top" src="uploads/{{ $actualite->image }}" alt="Card image cap img-fluid">
+                            </a>
+                    <div class="card-body">
+                      <h3 class="card-title black text-sm-left text-nowrap text-truncate">
+                        <a href="{{ route('annonces.show',$actualite->slug) }}">
+                            {{ $actualite->titre }}
+                        </a>
+                      </h3>
+                      
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <div class="date">
+                                    <i class="lni-calendar"></i>
+                                    {{-- {{$actualite->created_at->formatLocalized("%e %b %Y")}} --}}
+                                    {{ \Carbon\Carbon::parse($actualite->created_at)->translatedFormat('d F Y') }} |
+                                    {{ $actualite->categorie->nom }}
+                                </div>
+                            </small>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                @endforeach
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-xs-8 ml-auto blog-item">
+                    <a href="/Actualités" class="btn btn-lg btn-common btn-effect wow fadeInUp " data-wow-delay="1.2s">Lire plus...</a>
                     <!-- Blog Item Starts -->
                     
                 </div>
@@ -739,7 +751,7 @@
     <!-- Client Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="section chooose-us">
+    <section id="contact" class="section schooose-us">
         <div class="contact-form">
             <div class="container">
                 <div class="section-header">
@@ -808,7 +820,7 @@
                                     <p>
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">
-                                                Avenue Niwa numéro 02; Q. Binza pigeon; C. Ngaliema
+                                                Avenue Niwa numéro 02; <br> Quartier Binza Pigeon; <br> Commune de Ngaliema
                                             </font>
                                         </font>
                                     </p>

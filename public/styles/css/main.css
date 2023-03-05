@@ -47,8 +47,15 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+/*    font-family: 'Montserrat', sans-serif;*/
+    font-family: BrownBold,sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #263238;
+}
+h3{
+    font-family: BrownBold,sans-serif;
+    font-size: 15px !important;
     font-weight: 700;
     color: #263238;
 }
@@ -2105,7 +2112,7 @@ textarea {
 }
 
 #contact {
-    background: #ffffff;
+    background: #f2f5f6;
     position: relative;
     overflow: hidden;
 }

@@ -9,20 +9,23 @@
     <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
-    <title>Cabinet-Madudu</title>
+    <title>Law Firm MADUDU</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="styles/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/css/line-icons.css">
-    <link rel="stylesheet" href="styles/css/owl.carousel.css">
-    <link rel="stylesheet" href="styles/css/owl.theme.css">
-    <link rel="stylesheet" href="styles/css/nivo-lightbox.css">
-    <link rel="stylesheet" href="styles/css/magnific-popup.css">
-    <link rel="stylesheet" href="styles/css/animate.css">
-    <link rel="stylesheet" href="styles/css/color-switcher.css">
-    <link rel="stylesheet" href="styles/css/menu_sideslide.css">
-    <link rel="stylesheet" href="styles/css/main.css">
-    <link rel="stylesheet" href="styles/css/responsive.css">
+    
+    <link rel="stylesheet" href="{{asset('styles/css/bootstrap.min.css')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo_white.png" />
+    <link rel="stylesheet" href="{{ asset('styles/css/line-icons.css')}}">
+    <link rel="stylesheet" href="{{asset ('styles/css/owl.carousel.css')}}">
+    <link rel="stylesheet" href="{{asset('styles/css/owl.theme.css')}}">
+    <link rel="stylesheet" href="{{asset('styles/css/nivo-lightbox.css')}}">
+    <link rel="stylesheet" href="{{asset('styles/css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('styles/css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('styles/css/color-switcher.css')}}">
+    <link rel="stylesheet" href="{{asset('styles/css/menu_sideslide.css')}}">
+    <link rel="stylesheet" href="{{asset('styles/css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('styles/css/responsive.css')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo_white.png" />
 
 </head>
 
@@ -31,7 +34,7 @@
     <header id="slider-area">
         <nav class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white">
             <div class="container">
-                <a class="navbar-brand" href="/"><img src="styles/img/favicon2.png" alt=""> Law Firm MADUDU</a>
+                <a class="navbar-brand" href="/"><img src="{{ asset('styles/img/favicon2.png') }}" alt=""> Law Firm MADUDU</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button>
@@ -55,11 +58,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link page-scroll active" href="/#articles">Articles</a>
+                            <a class="nav-link page-scroll" href="/#articles">Articles</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="/#actulites">Actualités</a>
+                            <a class="nav-link page-scroll active" href="/Actualités">Actualités</a>
                         </li>
 
                         <li class="nav-item">
@@ -75,76 +78,110 @@
     <!-- Header Section End -->
 
     <!-- Services Section Start -->
-    <section id="services" class="section section-services">
-        <div class="container">
+    <section id="services" class="section section-services section-service">
+        <div class="container contservice">
             <div class="section-header">
-                <h2 class="section-title">Nos Services</h2>
+                <h2 class="section-title">Nos Actualités</h2>
 
                 <p class="section-subtitle">
-                    Prestations de services juridiques et judiciaires en offrant une structure d'étude, d’analyse, de conseil, de rédaction d’actes juridiques, d'assistance et de consultance.
+                    {{-- Prestations de services juridiques et judiciaires en offrant une structure d'étude, d’analyse, de conseil, de rédaction d’actes juridiques, d'assistance et de consultance. --}}
                 </p>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-xs-12">
-                    <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.2s">
-                        <div class="icon color-1">
-                            <i class="lni-pencil"></i>
+                <div class="container pt-125 pb-125">
+        <div class="">
+
+            <div class="row gx-5 ">
+                <div class="col-lg-8 col-md-12 pr-4">
+                    <div>
+                        <div class="section-title">
+                            <h5 class="mb-15 wow fadeInUp" data-wow-delay=".4s">
+                                Toutes les actualités
+                                <span class="lines d-flex col-11 d-block w-100">
+                                    <span class="hero-line col-4 bg-primaryColor"></span>
+                                    <span class="hero-line col-4 bg-redColor"></span>
+                                    <span class="hero-line col-4 bg-yellowColor"></span>
+                                </span>
+                            </h5>
+
                         </div>
-                        <h4> Le droit des affaires </h4>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-xs-12">
-                    <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.4s">
-                        <div class="icon color-2">
-                            <i class="lni-cog"></i>
+                       <nav style="padding-bottom: 35px;">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            
                         </div>
-                        <h4>Le droit civil</h4>
-                        <!-- <p>droit de la famille, droit foncier, droit des obligations et des contrats, droit de succession, vérifications d’actes d’état civil, etc.</p> -->
+                    </nav>
+                    <div class="tab-content " id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+
+                            <ul class="list-group list-group-flush">
+                                @forelse ($filcats as $filcat)
+                                    <li class="list-group-item ">
+                                        <span class="primaryColor">
+                                           Du {{ $filcat->created_at->formatLocalized('%e %b %Y') }}
+                                            {{ $filcat->updated_at->diffForHumans() }}
+                                        </span>
+                                        <br>
+                                        <strong>
+                                            <a href="{{ route('annonces.show', $filcat->slug) }}"
+                                                style="text-align: justify;">{{ $filcat->titre }}
+                                            </a>
+                                            <span class="hero-line bg-grey d-block mt-2 w-80" style="text-align: right;">
+                                                
+                                                <a href="{{ route('annonces.show', $filcat->slug) }}"
+                                                style="text-align: justify;">
+                                                    Détails...
+                                                </a>
+                                            </span>
+                                        </strong>
+                                        @empty
+                                        Pas d'actualités pour cette catégorie
+                                    </li>
+                                 @endforelse
+                            </ul>
+
+                            {{-- </div> --}}
+
+                            <div class="paginate" style="margin-top: 14px;margin-bottom: 50px;">
+                                {{-- {!! $artifrans->links() !!} --}}
+                            </div>
+
+                        </div> {{-- Francais --}}
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-xs-12">
-                    <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.6s">
-                        <div class="icon color-3">
-                            <i class="lni-stats-up"></i>
-                        </div>
-                        <h4>Le droit judiciaire</h4>
-                        <!-- <p>pratique du contentieux et règlement des différends par voie judiciaire ou par toute autre mode alternatif de règlement des conflits.</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-xs-12">
-                    <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.8s">
-                        <div class="icon color-4">
-                            <i class="lni-layers"></i>
-                        </div>
-                        <h4>le droit social</h4>
-                        <!-- <p>droit du travail, droit de la sécurité sociale, etc.</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-xs-12">
-                    <div class="item-boxes services-item wow fadeInDown" data-wow-delay="1s">
-                        <div class="icon color-5">
-                            <i class="lni-tab"></i>
-                        </div>
-                        <h4>Rédaction d’actes </h4>
-                        <!-- <p>contrats, procès-verbaux, procurations, quittances/décharges, statuts, testaments, transactions, etc.</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-xs-12">
-                    <div class="item-boxes services-item wow fadeInDown" data-wow-delay="1.2s">
-                        <div class="icon color-6">
-                            <i class="lni-briefcase"></i>
-                        </div>
-                        <h4>Mandat d’Administrateur de sociétés</h4>
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p> -->
-                    </div>
-                </div>
-            </div>
-            {{-- <div class="row">
-                <div class="col-lg-2 col-md-4 col-xs-8 ml-auto blog-item">
-                    <a href="/services" class="btn btn-lg btn-common btn-effect wow fadeInUp " data-wow-delay="1.2s">Voir plus...</a>
 
                 </div>
-            </div> --}}
+                <div class="col-lg-4 col-md-12 border-left-secondaryColor">
+                    <div class="">
+                        <div class= "mb-15 wow fadeInUp" data-wow-delay=".4s">
+                            <h5 class="">Catégories</h5>
+                        </div>
+                        <nav style="padding-bottom: 35px;">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            
+                        </div>
+                    </nav>
+                            <ul class="list-group">
+                                @forelse ($actucategories as $actucategorie)
+
+                                {{-- <li class="list-group-item d-flex justify-content-between align-items-center"> --}}
+                                    <a href="{{ route('actufiltrcat',['id'=>$actucategorie->id]) }}"
+                                        class="list-group-item list-group-item-action">
+                                        {{ $actucategorie->nom }}
+                                        
+                                    </a>
+                                  {{-- <span class="badge badge-primary badge-pill">3 m {{ $actucategorie->count('id') }}</span> --}}
+                                  @empty
+                                            <br>Pas de categorie
+                                {{-- </li> --}}
+                                @endforelse
+                            </ul>
+                    </div>
+                </div>
+            </div> {{-- fin row --}}
+
+        </div>
+            </div>
         </div>
     </section>
 
@@ -209,31 +246,6 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-                        <div class="widget">
-                            <h3 class="block-title">Instagram</h3>
-                            <ul class="instagram-footer">
-                                <li>
-                                    <a href="#"><img src="styles/img/instagram/insta1.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="styles/img/instagram/insta2.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="styles/img/instagram/insta3.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="styles/img/instagram/insta4.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="styles/img/instagram/insta5.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="styles/img/instagram/insta6.jpg" alt=""></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -288,26 +300,28 @@
     </div>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="styles/js/jquery-min.js"></script>
-    <script src="styles/js/popper.min.js"></script>
-    <script src="styles/js/bootstrap.min.js"></script>
-    <script src="styles/js/classie.js"></script>
-    <script src="styles/js/color-switcher.js"></script>
-    <script src="styles/js/jquery.mixitup.js"></script>
-    <script src="styles/js/nivo-lightbox.js"></script>
-    <script src="styles/js/owl.carousel.js"></script>
-    <script src="styles/js/jquery.stellar.min.js"></script>
-    <script src="styles/js/jquery.nav.js"></script>
-    <script src="styles/js/scrolling-nav.js"></script>
-    <script src="styles/js/jquery.easing.min.js"></script>
-    <script src="styles/js/wow.js"></script>
-    <script src="styles/js/jquery.vide.js"></script>
-    <script src="styles/js/jquery.counterup.min.js"></script>
-    <script src="styles/js/jquery.magnific-popup.min.js"></script>
-    <script src="styles/js/waypoints.min.js"></script>
-    <script src="styles/js/form-validator.min.js"></script>
-    <script src="styles/js/contact-form-script.js"></script>
-    <script src="styles/js/main.js"></script>
+
+
+    <script src="{{asset('styles/js/jquery-min.js')}}"></script>
+    <script src="{{asset('styles/js/popper.min.js')}}"></script>
+    <script src="{{asset('styles/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('styles/js/classie.js')}}"></script>
+    <script src="{{asset('styles/js/color-switcher.js')}}"></script>
+    <script src="{{asset('styles/js/jquery.mixitup.js')}}"></script>
+    <script src="{{asset('styles/js/nivo-lightbox.js')}}"></script>
+    <script src="{{asset('styles/js/owl.carousel.js')}}"></script>
+    <script src="{{asset('styles/js/jquery.stellar.min.js')}}"></script>
+    <script src="{{asset('styles/js/jquery.nav.js')}}"></script>
+    <script src="{{asset('styles/js/scrolling-nav.js')}}"></script>
+    <script src="{{asset('styles/js/jquery.easing.min.js')}}"></script>
+    <script src="{{asset('styles/js/wow.js')}}"></script>
+    <script src="{{asset('styles/js/jquery.vide.js')}}"></script>
+    <script src="{{asset('styles/js/jquery.counterup.min.js')}}"></script>
+    <script src="{{asset('styles/js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{asset('styles/js/waypoints.min.js')}}"></script>
+    <script src="{{asset('styles/js/form-validator.min.js')}}"></script>
+    <script src="{{asset('styles/js/contact-form-script.js')}}"></script>
+    <script src="{{asset('styles/js/main.js')}}"></script>
 
 </body>
 

@@ -9,7 +9,7 @@
     <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
-    <title>Cabinet-Madudu</title>
+    <title>Law Firm MADUDU</title>
 
     <!-- Bootstrap CSS -->
     
@@ -39,26 +39,33 @@
           </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="/#features">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="/#services">Nos services</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#portfolios">Works</a>
+                        </li> -->
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#features">À propos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/services">Nos services</a>
+                            <a class="nav-link page-scroll" href="/#team">Notre équipe</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/#team">Notre équipe</a>
+                            <a class="nav-link page-scroll active" href="/#articles">Articles</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="">Articles</a>
+                            <a class="nav-link page-scroll" href="/#actulites">Actualités</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="/#contact">Contact</a>
+                            <a class="nav-link page-scroll" href="/#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -76,7 +83,7 @@
                 <h2 class="section-title">Nos Articles</h2>
 
                 <p class="section-subtitle">
-                    Prestations de services juridiques et judiciaires en offrant une structure d'étude, d’analyse, de conseil, de rédaction d’actes juridiques, d'assistance et de consultance.
+                    {{-- Prestations de services juridiques et judiciaires en offrant une structure d'étude, d’analyse, de conseil, de rédaction d’actes juridiques, d'assistance et de consultance. --}}
                 </p>
             </div>
             <div class="row">
@@ -86,7 +93,7 @@
             <div class="row gx-5 ">
                 <div class="col-lg-8 col-md-12 pr-4">
                     <div>
-                        <div class="section-title mb-55 ">
+                        <div class="section-title">
                             <h5 class="mb-15 wow fadeInUp" data-wow-delay=".4s">
                                 Tous les articles
                                 <span class="lines d-flex col-11 d-block w-100">
@@ -119,11 +126,21 @@
                                             <a href="{{ route('annonces.show', $artifran->slug) }}"
                                                 style="text-align: justify;">{{ $artifran->titre }}
                                             </a>
-                                            <span class="hero-line bg-grey d-block mt-2 mb-2 w-80">
+                                            
+
+                                            <span class="hero-line bg-grey d-block mt-2 w-80" style="text-align: right;">
                                                 
+                                                <a href="{{ route('annonces.show', $artifran->slug) }}"
+                                                style="text-align: justify;">
+                                                    Détails...
+                                                </a>
                                             </span>
+                                            
                                         </strong>
+                                        {{-- @empty
+                                            <br>Pas d'articles pour le moment --}}
                                     </li>
+
                                 @endforeach
                             </ul>
 

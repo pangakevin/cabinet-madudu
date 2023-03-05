@@ -28,6 +28,7 @@ class CategorieController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('nom', __('Nom'));
+        $grid->column('type', __('Type'))->filter('like');
         $grid->column('description', __('Description'));
         $grid->column('created_at', __('Date création'));
         $grid->column('updated_at', __('Date de M.A.J'));
@@ -47,6 +48,7 @@ class CategorieController extends AdminController
 
         $show->field('id', __('Id'));
         $show->field('nom', __('Nom'));
+        $show->field('type', __('Type'));
         $show->field('description', __('Description'));
         $show->field('created_at', __('Date création'));
         $show->field('updated_at', __('Date de M.A.J'));
@@ -64,6 +66,7 @@ class CategorieController extends AdminController
         $form = new Form(new Categorie());
 
         $form->text('nom', __('Nom'));
+        $form->select('type', __('types'))->options([1=>'Articles',2=>'Actualités']);
         $form->text('description', __('Description'));
 
         return $form;

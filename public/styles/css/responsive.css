@@ -244,7 +244,7 @@
     background: #fff !important;
   }
   .navbar-expand-md .navbar-brand, .navbar-expand-md .navbar-toggler {
-    margin: 12px 15px;
+    margin: 0px 13px;
   }
   .navbar-expand-md .navbar-nav .active > .nav-link, .navbar-expand-md .navbar-nav .nav-link.active, .navbar-expand-md .navbar-nav .nav-link.active::before, .navbar-expand-md .navbar-nav .nav-link.open, .navbar-expand-md .navbar-nav .open > .nav-link {
     background: #f1f1f1;
